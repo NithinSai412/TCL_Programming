@@ -1,5 +1,4 @@
-# Tcl Script: escape_sequences.tcl
-# Each line includes the escape sequence, its description, and the expected output */
+# Each line includes the escape sequence, its description, and the expected output
 
 puts "Backslash Escape Sequences in Tcl"
 puts "-----" 
