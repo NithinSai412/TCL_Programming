@@ -12,4 +12,4 @@ puts HelloWorld
 # -- If the text does not have any whitespaces, then the double quotes can be ignored
 
 puts {Hello World}  
-# -- Braces can be used inplace of double quotes
+# -- Braces can be used inplace of double quotes, however its important to note that braces do not support substitutions
