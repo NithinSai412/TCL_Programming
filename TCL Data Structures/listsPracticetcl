@@ -1,0 +1,31 @@
+set marks {};
+set passed {};
+
+for {set i 0} {$i<10} {incr i} {
+  lappend marks [expr round(rand()*100)];
+}
+
+puts "The list of marks obtained: $marks";
+
+#Calculate the average marks scored
+
+set length [llength $marks];
+set sum 0;
+foreach mark $marks {
+  set sum [expr $sum+$mark];
+  if {$mark>60} {
+    lappend passed $mark`1set passed {};
+~ }
+}
+
+puts "Total sum: $sum, number of students: $length";
+set average [expr $sum/$length]
+puts "Average: $average";
+
+#Finding out the highest and lowest marks
+set sortedMarks [lsort $marks];
+puts "Highest marks obtained [lindex $sortedMarks [expr $length-1]]"
+puts "Lowest marks obtained [lindex $sortedMarks 0]"
+
+puts "List of passed marks: $passed";
+
